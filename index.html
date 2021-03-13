@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <title>Weather Dashboard</title>
+    <!-- Link css stylesheet -->
+    <link rel="stylesheet" href="Assets/style.css" />
+    <!-- ************** link axios cdn ****************** -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <!-- Page Title and search input here -->
+    <div id="jumbo" class="jumbotron jumbotron-fluid text-white">
+      <div class="container">
+        <h1>Weather Dashboard</h1>
+        <form id="searchForm">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              id="cityName"
+              placeholder="Enter a City Name"
+              name="query"
+            />
+            <div class="input-group-append">
+              <button class="btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div
+        class="jumbotron p-4 p-md-5 bg-transparent text-light"
+        id="queryContent"
+      >
+        <div class="col-md-6 px-0" id="queryDetails">
+          <!-- Appended Details here -->
+        </div>
+        <!-- Add 5 Day Forecast Here -->
+        <div class="row">
+          <div class="col-12 pt-3"><h3>5 Day Forecast</h3></div>
+          <div
+            id="fiveDay"
+            class="col-12 d-flex flex-row flex-wrap justify-content-start"
+          >
+            <!-- 5 Day Cards Here -->
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-3">
+        <div class="col-12">
+          <ul class="list-group flex-wrap" id="searchHistory">
+            <!-- append search history here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Link jquery, luxon and scriptjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js"></script>
+    <script src="Assets/script.js"></script>
+  </body>
+</html>
