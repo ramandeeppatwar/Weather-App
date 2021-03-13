@@ -1,3 +1,5 @@
+# Weather-App
+
 ## Client Story
 
 ```
@@ -18,4 +20,39 @@ My goal with this Web Application was to create a Mobile First seamless weather 
 - If you leave the web app and come back, the last city you searched will be displayed.
 
 ---
-# Weather-App
+
+## Programming languages and Tools:
+
+- [Luxon](https://moment.github.io/luxon/)
+- [jQuery](https://api.jquery.com/)
+- [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+- [Axios](https://flaviocopes.com/axios/)
+- [OpenWeather API](https://openweathermap.org/api)
+- HTML, CSS & JavaScript
+
+---
+
+### Clone the repository locally
+
+1. Clone the respository to your machine: `git clone https://github.com/ramandeeppatwar/Weather-App`
+
+---
+
+### Sources
+
+- [UV Index Colors](https://www.epa.gov/sunsafety/uv-index-scale-0)
+
+---
+
+### Project Links:
+
+1. [GitHub Repo](https://github.com/ramandeeppatwar/Weather-App)
+2. [Github Live](https://ramandeeppatwar.github.io/Weather-App/)
+
+---
+
+## Demo
+
+The following animation demonstrates the application functionality:
+
+![weather dashboard demo](demo.gif)
